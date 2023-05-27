@@ -1,5 +1,7 @@
 const getAllToDoItems = (request,response)=>{
     response.send("List of all to do items")
 }
-
-module.exports={getAllToDoItems}
+const createNewToDoItems = (request,response)=>{
+    response.json(request.body)
+}
+module.exports={getAllToDoItems,createNewToDoItems}
